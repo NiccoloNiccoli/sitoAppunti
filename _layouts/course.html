@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% include navigation.html %}
+<div id="content">
+     {{content}}
+<h1>Argomenti del corso</h1>
+<div id="sections">
+    <ul>
+        {% assign sections = site.posts | where_exp:"item", "item.categories contains page.coursename" | sort: "title" %}
+        {% for section in sections%}
+        <li><a href="{{site.url}}{{section.url}}">{{section.title}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+</div>

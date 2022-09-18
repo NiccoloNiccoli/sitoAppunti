@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+
+<div id="main-content">
+    {{content}}
+    {% for item in site.data.navigation %}
+    <div class="course">
+        <a href="{{site.url}}{{ item.link }}"><img src="{{site.url}}/assets/images/{{item.image}}" alt=""><p>{{item.name}}</p></a>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,15 @@
+- name: Home
+  image: placeholder.jpg
+  link: /
+- name: FoSM
+  image: placeholder.jpg
+  link: /fosm.html
+- name: PPML
+  image: placeholder.jpg
+  link: /ppml.html
+- name: InnMan
+  image: innman.jpg
+  link: /innman.html
+- name: KnEng
+  image: placeholder.jpg
+  link: /kneng.html
